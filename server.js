@@ -4,6 +4,8 @@ const app = express();
 app.use(express.json())
 const port = process.env.SERVER_PORT || 3000;
 
+app.get('Swagatam');
+
 app.listen(port, (err) => {
     if(err) {
         console.log('Error in connection attempt', err);
