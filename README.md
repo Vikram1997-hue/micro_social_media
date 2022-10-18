@@ -8,11 +8,7 @@ An example of a typical social media platform, built entirely in JavaScript. Bas
 5. Upon review, ADMIN may decide that a post made by a certain USER violates Community Guidelines and may therefore choose to delete said post (soft delete)
 6. USER's can chat with each other (text, audio call, video call)
 
-
-  
-  
-  
-  
+----
 Tech stack: 
 
 Backend - Express + NodeJS + MongoDB + Redis  
