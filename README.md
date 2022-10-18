@@ -9,11 +9,13 @@ An example of a typical social media platform, built entirely in JavaScript. Bas
 6. USER's can chat with each other (text, audio call, video call)
 
 
-
+  
+  
+  
+  
 Tech stack: 
 
-Backend - Express + NodeJS + MongoDB + Redis
-
-DevOps - AWS
+Backend - Express + NodeJS + MongoDB + Redis  
+DevOps - AWS  
 
 Deployed @ ____________ (coming soon)
