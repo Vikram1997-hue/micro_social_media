@@ -4,7 +4,9 @@ const app = express();
 app.use(express.json())
 const port = process.env.SERVER_PORT || 3000;
 
-app.get('Swagatam');
+app.get('/', (req, res) => {
+    res.status(200).send('Swagatam');
+});
 
 app.listen(port, (err) => {
     if(err) {
