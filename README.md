@@ -11,6 +11,7 @@ An example of a typical social media platform, built entirely in JavaScript. Bas
 
 
 Tech stack: 
-Express + NodeJS + MongoDB + Redis
+Backend - Express + NodeJS + MongoDB + Redis
+DevOps - AWS
 
 Deployed @ ____________ (coming soon)
