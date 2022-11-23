@@ -1,10 +1,5 @@
-const mongoose = require('../../../config/db.config');
+// const mongoose = require('../../../config/db.config');
 const User = require('../models/userModel');
-
-const homeController = (req, res) => {
-  console.log(mongoose);
-  res.status(200).send('Kya haal chaal bhai');
-};
 
 const getUserDetails = async (req, res) => {
   const myUser = await User.findOne({ name: req.query.name });
@@ -16,6 +11,5 @@ const getUserDetails = async (req, res) => {
 };
 
 module.exports = {
-  homeController,
   getUserDetails,
 };
