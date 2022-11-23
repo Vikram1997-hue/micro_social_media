@@ -1,17 +1,17 @@
 const express = require('express');
-require('dotenv').config()
-const app = express();
-app.use(express.json())
-const port = process.env.SERVER_PORT || 3000;
+require('dotenv').config();
+const userRouter = require('./src/api/v1/routes/userRoute');
 
-app.get('/', (req, res) => {
-    res.status(200).send('Swagatam');
-});
+// Express set-up
+const app = express();
+const port = process.env.SERVER_PORT || 3000;
+app.use('/user', userRouter);
 
 app.listen(port, (err) => {
-    if(err) {
-        console.log('Error in connection attempt', err);
-        return;
-    }
-    console.log(`Server running at http://localhost:${port}`);
-})
+  if (err) {
+    console.error('An error has occured:', err);
+    // eslint-disable-next-line no-useless-return
+    return;
+  }
+  console.log(`Server running at http://localhost:${port}`);
+});
